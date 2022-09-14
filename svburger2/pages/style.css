@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush|Merienda');
+
+body {
+    font-family: Merienda;
+    background-image: url('pics/singup.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+
+.sbmt{
+  background: linear-gradient(
+135deg
+, black 0%, rgb(48,3,3) 100%);
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  width:200px;
+  letter-spacing: .11rem;
+  outline:none;
+  cursor: pointer;
+}
+
+.sbmt:hover
+{
+transform: scale(1.05) translateY(-3px);
+  box-shadow: 3px 3px 6px white;
+}
+
+
+.singdiv{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+#singin{
+    padding-top: 50px;
+}
+
+h1{
+    font-family: Merienda;
+    font-size: 2.5em;
+    color: #fff;
+    display: block;
+}
+
+#p1{
+  color: white;
+  text-decoration: underline;
+}
+
+.inpt{
+  border-width: 3px;
+  border-radius: 5px;
+  border-style: solid white;
+  width: 250px;
+  height: 20px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  /* background-color: transparent; */
+  color: white;
+  box-shadow: 3px 3px 4px white, 0 0 1em grey, 0 0 0.2em white;
+  opacity: .5;
+  background-color: black;
+  font-family: Merienda;
+} 
+
+::placeholder {
+    color: rgb(199, 129, 129);
+    text-align: center;
+    font-weight: bolder;
+    font-family: Merienda;
+  }

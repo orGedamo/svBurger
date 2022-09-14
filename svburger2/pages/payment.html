@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SV Burgers|Payment</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='payment.css'>
+</head>
+<body>
+    <div class="mainscreen"> 
+          <div class="card">
+            <div class="leftside">
+              <img src="pics/payment.jpg"class="paypic"/>
+            </div>
+            <div class="rightside">
+                <form action="/payment" name="paymentinfo" method="post" onsubmit="return paymentvalidation()">
+                <h1 id="checkouttotal">CheckOut: your total is $</h1>
+                <h2>Payment Information</h2>
+                <p>Cardholder Name</p>
+                <input type="text" class="inputbox" name="name" required />
+                <p>Card Number</p>
+                <input type="number" class="inputbox" name="card" required />
+    
+                <p>Card Type</p>
+                <select class="inputbox" name="type" required>
+                  <option value="">Select a Card Type</option>
+                  <option value="Visa">Visa</option>
+                  <option value="RuPay">American Express</option>
+                  <option value="MasterCard">MasterCard</option>
+                </select>
+    <div class="carddate">
+    
+                <p class="carddate_text">Expiry</p>
+                <input type="date" class="inputbox" name="date" id="exp_date" required />
+    
+                <p class="carddate_text2">CVV</p>
+                <input type="password" class="inputbox" name="cvv" id="cvv" required />
+            </div>
+            <p></p>
+            <button class="button" type="submit">CheckOut</button>
+        </form>
+            </div>
+          </div>
+        </div>
+        <script src='payment.js'></script>
+</body>
+</html>
